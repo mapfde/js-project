@@ -5,10 +5,12 @@
    <head>
       <meta charset="utf-8">
 
-      <title>Example</title>
+      
+	  <script src="https://cdn.rawgit.com/dynobo/snapjs/master/snap.js"></script>
 	  <script src="program.js"></script>
 	  <link rel="stylesheet" type="text/css" href="style.css">
-
+	  
+		<title>Example</title>
 	</head>
 
 	<body>
@@ -16,6 +18,12 @@
 	<h1 id="mytitle">Beispiel</h1>
 	<div id="something">Drück auf den Knopf, um die Funktion auszulösen.</div>
 	<button type="button" onclick="myFunction()">Klick mich!</button>
+	<button id="pink" type="button" onclick="Flower()">Klick mich! und ich male eine Blume</button>
+	<input type="button" value="Reset Form" onClick="this.form.reset()"/>
+	<p>
+	<canvas id="stage" width=480px; height=360px; ></canvas>
+	<div id="variables"></div>
+	</p>
 	</body>
 </html>
 	
