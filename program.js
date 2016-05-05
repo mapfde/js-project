@@ -1,5 +1,8 @@
 function myFunction() {
-document.getElementById("mytitle").innerHTML = "Dieser Text wurde vom Skript geschrieben";
+	var c = document.getElementById("stage");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#021561";
+ctx.fillRect(0, 0, 480, 360);
 goToXY(20,20);
 setPenSizeTo(1);
 //setPenColorTo("#F3FF05");
@@ -40,6 +43,13 @@ for (var zahl = 1; zahl <= 25; zahl++) {
 	turnLeft (15);
 }
 
+}
+function Clearall(){
+	var c = document.getElementById("stage");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "blue";
+ctx.fillRect(0, 0, 300, 150);
+ctx.clearRect(0, 0, 480, 360);
 }
 
 
