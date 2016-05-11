@@ -1,4 +1,10 @@
 function myFunction() {
-document.getElementById("mytitle").innerHTML = "Dieser Text wurde vom Skript geschrieben";
+
+goToXY(20,20);
+
+for (var i = 1; i <= 200; i++) {
+  move(i);
+  turnRight(121);
 }
 
+}
